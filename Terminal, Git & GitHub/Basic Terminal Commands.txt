@@ -1,0 +1,76 @@
+// pwd - stands for "Print Working Directory", use this command any time you are unsure where you are currently in your file structure.
+pwd
+MacBook-Pro:~ jbenammi$ pwd
+/users/jbenammi
+
+// ls - Use ls command to see all the files and folders that are in your current directory.
+
+// cd - To traverse down into a child folder from the current directory, you would use cd [folder_name] which translates to: "Change directory to [folder_name]" where [folder_name] is the name of the child folder.
+cd [folder name]
+MacBook-Pro:desktop jbenammi$ cd JonathanBenAmmi
+MacBook-Pro:JonathanBenAmmi jbenammi$
+
+To traverse up to a parent folder from where you currently are, it's  cd .. (Pronounced: "cd dot dot")
+
+cd / will change the current directory to the root directory of your computer. From this folder, you can access your application folders and the entire contents of the drive. Pronounced: "c d slash"
+
+cd ~ will change the current directory to the root directory of the current user. This is usually where terminal will start at whenever you open it. Pronounced: "c d tilda"
+
+The command mkdir [folder name] will make a new directory. Whatever argument you pass into this command will be the name of your new file. After making the directory, you could run cd [folder name] to enter into that directory or use the ls command to see the new folder you created inside your current directory.
+
+mkdir [folder name]
+MacBook-Pro:desktop jbenammi$ mkdir JonathanBenAmmi
+
+// Delete a folder
+
+* Empty folder
+
+rmdir [folder name]
+MacBook-Pro:desktop jbenammi$ rmdir JonathanBenAmmi
+
+* Non-empty folder
+rm -rf [folder name]
+MacBook-Pro:desktop jbenammi$ rm -rf JonathanBenAmmi
+
+* Creating a file
+The touch command will create a new, empty file with the name and extension type that you specify. You can make any type of file if you provide the extension type.
+touch [New File]
+MacBook-Pro:JonathanBenAmmi jbenammi$ touch newFile.html
+
+* Removing a file
+deleting a file using the rm command will remove the file without any prompt. It will be permanently deleted and you cannot recover this file from your trash.
+
+rm [file name]
+MacBook-Pro:JonathanBenAmmi jbenammi$ rm newFile.html
+rm -i [file name]
+MacBook-Pro:JonathanBenAmmi jbenammi$ rm -i newFile.html
+remove newFile.html?
+
+* Renaming / Moving a file
+The mv command has two uses. First, you can rename a file by first providing the file's name and then providing what you want the file to be renamed to. In the first example, newFile.html would be renamed to renamedFile.html. Second, it can be used to move a file to a different folder. In the second example, renamedFile.html would be moved up one directory with the same name. In either case, think of this command as moving a file into its current directory with a different name or into a different directory with the same or different name.
+
+mv [Current File Name] [New File Name]
+MacBook-Pro:JonathanBenAmmi jbenammi$ mv newFile.html renamedFile.html
+mv [File to Move] [location and name to move the file]
+MacBook-Pro:JonathanBenAmmi jbenammi$ mv renamedFile.html ../renamedFile.html
+
+
+* Copying a file
+The cp command will copy a file into the current directory with the new name you provided. In the example, say you were in your Desktop directory and you ran the cp command. The Desktop directory would now have index.html and copy.html in it.
+
+cp [file to ] [name of new copied file]
+MacBook-Pro:desktop jbenammi$ cp index.html copy.html
+
+* Moving directory
+mv [folder to move] [Folder destination to move into]
+MacBook-Pro:desktop jbenammi$ mv NewProjectFolder/ JonathanBenAmmi/
+
+
+* Opening the current directory in Finder
+open .
+MacBook-Pro:desktop jbenammi$ open .
+
+
+
+
+//

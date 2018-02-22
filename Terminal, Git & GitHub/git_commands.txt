@@ -1,0 +1,116 @@
+/**
+* Git Commands
+
+git init - initialize the repository.
+
+git add . - add all the files that were changed since the last back up to the staging area.
+
+git status - shows you all the files that were changed since the last backup and which ones are already added to the staging area.
+
+git commit -m "..." - commits the changes to the repository.
+
+git checkout ____ - switches to the branch name provided in your git repository. This will create a new branch if the name provided doesn't exist.
+
+git branch - shows all of your git branches and marks the one you are currently on.
+
+git log - shows all the backups created in the repository.
+
+git blame ____ - shows who wrote which line of code or in other words who is to be blamed for that particular line of code.
+
+git remote add origin ____ - tells git to add a remote place called 'origin' to a remote URL ___.
+
+git push - pushes the changes in your local repository to the remote repository.
+
+git pull - pulls the changes in a remote repository to your own local repository.
+
+git clone ___ - clones a remote repository in ___ to your own local folder.
+
+**/
+
+HOW TO CREATE A LOCAL GIT REPO AND PUSH TO GITHUB
+
+1. Create a directory
+2. Create files inside that directory
+3. Create a local repo                                  git init
+4. When done editing your files, add them to staging    git add --all  OR   git add .
+5. Check the status of your staging area                git status
+6. Commit!                                              git commit -m "whatever your comment may be"
+7. Go to GitHub and create a public repo
+8. Link your local repo to remote repo                  git remote add origin https://github.com/maaaaaaaax/GitHubRepoAssignment.git
+9. Push an existing repo to GitHub                      git push -u origin master
+
+
+HOW TO WORK ON AN EXISTING REPO AND COLLABORATE
+
+1. Log in to GitHub
+2. Go to the profile for the repo you want to use
+3. Fork the repo to create your own version
+4. Clone your own repo                                  git clone url
+5. Edit your files, save when done
+6. Add your edits to staging                            git add --all
+7. Commit your edits                                    git commit -m "comment goes here"
+8. Push your commit to a remote repo                    git push -u origin
+9. Submit a pull request (on GitHub's UI)
+
+
+
+
+
+
+/**
+* Git overview
+
+Now create a file in that directory called aboutMe.txt with your name, a project goal you wish to accomplish, and your favorite TV show. Ours looked like this:
+
+Name: Kari Ekenes
+Project Goal: Master Git!
+Favorite TV Show: Game of Thrones
+
+
+The current state of aboutMe.txt is modified. You can see the current state by running:
+
+git status
+
+
+To change the state to staged (which means ready to be committed), we tell Git to add the file to its index.
+
+git add aboutMe.txt
+
+
+Now to take a snapshot of the current state of all the staged files, we run:
+
+git commit -m "aboutMe.txt added"
+
+And the state of aboutMe.txt  becomes committed.
+
+**/
+
+/**
+
+git revert - revert reverses all the changes made by the original commit
+
+git revert -n HEAD
+Finished one revert.
+git revert -n 540ecb7
+Removed .txt
+Finished one revert.
+git commit -m "revert 45eaf98 and 540ecb7"
+Created commit 2b3c1de: revert 45eaf98 and 540ecb7
+2 files changed, 0 insertions(+), 10 deletions(-)
+delete mode 100644 copy.txt
+
+
+
+Right as you hit the Enter key, you realize you’ve just committed a configuration file with your private password in it. We’ve all been there.
+
+git reset <commit hash> --hard
+
+
+So far we've been using the full hash whenever we needed to. However, the first leading seven characters that are displayed by git log are normally unique enough that you can use them without having to use the full forty-character hash. So we can run something like this:
+
+git reset 6c77676 --hard
+
+
+**/
+
+STILL TO ADD - BRANCHING, MERGING, MERGE CONFLICTS, FORKING, CLONING, PULLING
