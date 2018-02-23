@@ -1,0 +1,344 @@
+/* Selectors are used for declaring the HTML elements to which a style will apply. Properties (like color, font-size) are inside.
+
+Selectors can be tags (<p>), IDs, or classes
+
+A stylesheet is a list of rules. Each rule (or "rule-set")
+consists of one or more selectors and a declaration block.
+
+ */
+
+ /* All elements with <p> tag should have the font color blue */
+
+p{
+	color:blue;
+}
+
+/* ID tag selectors are prefaced with hashes (#) */
+#important{
+	font-size:36px;
+}
+
+/* class selectors are prefaced with periods */
+.info{
+	background-color: green;
+	border:1px solid black;
+}
+
+
+
+/* Block & Inline notes */
+
+p{
+	background-color: grey;
+	display: inline;
+}
+a{
+	background-color: yellow;
+	display: block;
+}
+ul{
+	background-color: blue;
+	display: inline;
+}
+ul li{
+	background-color: green;
+	display: inline;
+}
+
+
+/* Layouts */
+
+#container{
+	background-color: grey;
+	width:960px;
+	/*overflow: hidden;
+	height: auto;*/
+}
+#box-1, #box-2, #box-3{
+	background-color: green;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+	margin: 0 20px;
+	padding: 20px;
+}
+#box-1, #box-2, #box-3{
+	float:right;
+}
+.clear{
+	clear: both;
+}
+
+
+
+
+/*    ~~~~~~~~~~   STYLING ELEMENTS    ~~~~~~~~~~   */
+
+
+
+
+/* width | height:
+The width and height properties are used to determine the size of your elements.
+The values can be expressed in pixels (px) and percentage (%).
+When working with static content using px is suitable as you will be defining your page to not change.
+If you are working with responsive design, you will want to use %. */
+
+a {
+	width: 25px;
+}
+div {
+	width: 100%;
+	height: 200px;
+}
+img {
+	width: 250px;
+}
+
+
+/* Box Model
+
+All web layouts are accomplished with block elements.
+Designers use blocks, most often <div> elements, to create rectangular areas into which all content fits.
+
+There are only three rules: Total area (the space an element occupies and affects); Float, clear and overflow; and Nested elements
+
+The box model consists of margin, border, and padding. Margin is outside block elements, while padding is within them.
+
+
+*/
+
+div{
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 75px;
+  padding-left: 100px;
+}
+
+ /* IS EQUIVALENT TO */
+
+div{
+  padding: 25px 50px 75px 100px;
+}
+
+div{
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+
+ /* IS EQUAL TO */
+
+ div{
+  padding: 25px 50px;
+}
+
+
+
+/* overflow:
+
+This property determines what should happen when the content inside of a container is too much for the container size.
+You can set the container to hide the additional information that does not fit,
+show the information no matter what, or have a scroll bar added to the element
+so the content is contained but still viewable.
+
+*/
+
+div {
+	overflow: scroll;
+}
+
+div {
+	overflow: hidden;
+}
+
+
+/* background:
+
+The background property can modify the background of an element all in one line.
+This is a shorter version than splitting each property on its own line of code.
+The color can be defined using hex, rgb or semantic code.
+
+*/
+
+p {
+	background: #ffffff url("cherries.png") no-repeat fixed center;
+}
+
+
+/* background-color, -image, etc.
+
+background-color | background-image | background-position | background-size | background-repeat:
+These background properties adjust the background by property type.
+Like background, background-color can be defined using hex, rgb or semantic code.
+
+*/
+
+p {
+	background-color: blue;
+}
+div {
+	background-image: url("cherries.png");
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+/* border:
+This property adjusts all border elements in one line. The first value is the border thickness.
+The second value is the border type. The third value is the border color. The color can be hex, rgb or semantic code.
+
+The border property can also be broken down into separate lines using border-width, border-style and border color.
+Additionally, you can select very specifically which border you want to style by using border-top, border-bottom, border-right, border-left.
+
+*/
+
+button {
+	border: 2px dotted green;
+}
+div {
+	border: 1px solid #000000;
+}
+p {
+	border-right: 1px groove rgb(100,100,100);
+	border-left: 1px groove rgb(200,200,200);
+}
+
+
+/* border-radius
+This property allows the corners of your border to be given a rounded appearance.
+The values can be set using px or %.
+*/
+
+button {
+	border-radius: 5px;
+}
+
+
+/*   ~~~~~~~~~~~~    STYLING TEXT    ~~~~~~~~~~~~~~~~~~    */
+
+/* color
+
+The text color is specified using the color property.
+The value of the color property can be expressed using hex, RGB or semantic code.
+
+*/
+
+p {
+	color: #ffffff;
+}
+a {
+	color: rgb(255, 255, 255);
+}
+span {
+	color: white;
+}
+
+
+/* text-align
+
+This property is used to set the horizontal alignment of any text.
+Text can be centered, or aligned to the left or right, or justified.
+This property will only work if the property is also display block.
+*/
+
+h1 {
+	text-align: center;
+}
+
+
+/* text-decoration:
+
+The text-decoration property is used to add and remove underlines, overlines, and line-throughs.
+
+*/
+
+a {
+	text-decoration: none;
+}
+
+/* Web-safe fonts:
+
+There are fonts that are installed on pretty much all systems and so are termed
+web safe fonts because you can with some certainty know it will look the same
+regardless of the system the user has. Some of these are;
+Verdana, Arial, Trebuchet MS, Times New Roman, Georgia, Andale Mono,
+Courier New, Comic Sans, and Impact.
+
+Font-family allows for multiple options to be entered where the browser goes through them from left to right until it finds a font that is installed on the system which can be used. This means that you always want to make sure you have a generic-family option as your last value so that if none of the others can be found, the browser will use the system default for the family specified.
+
+The browser searches for Helvetica Neue on the user's system and uses this if it finds it.
+If Helvetica Neue isn't found, the browser searches for Arial on the user's system and uses it if it finds it.
+If Arial isn't found, we'll use Verdana.
+As a last resort, if none of the fonts in the font stack are found we fall back to sans-serif,
+which basically instructs the browser to use whatever the system's default sans-serif font is.
+
+Fonts with more than one word in their name need surrounding in quotes.
+
+Personal preference: use Georgia
+
+*/
+
+p {
+	 font-family: "helvetica neue", arial, verdana, sans-serif;
+ }
+
+/* font-size:
+
+The font-size property values can be expressed in four different units: pt, px, em, %.
+pt and px (point and pixel) are considered static sizing and will not adjust properly when resizing your page.
+em and % (responsive measure and percent) however will resize and are what most developers recommend using.
+Below is a drop-down chart showing the approximate equivalents between the four units.
+
+*/
+
+h3 {
+	font-size: 10pt;
+}
+p {
+	font-size: 14px;
+}
+a {
+	font-size: 1.2em;
+}
+span {
+	font-size: 80%;
+}
+
+
+/* font-style
+
+This property controls the slanted emphasis of the text.
+Some text may have an italic property built into the font and so selecting
+italic would be fine. For fonts that do not have an italic style, the value
+oblique can be used to mimic italicized text.
+
+*/
+
+span {
+	font-style: italic;
+}
+
+/* font-weight
+This property defines the thickness of a character line. normal is often the default value.
+The values can be set numerically or semantically.
+
+Options: normal, bold, bolder, lighter; numbers from 100 to 900, incremented by 100 each
+
+*/
+
+p {
+	font-weight: bold;
+}
+span {
+	font-weight: 600;
+}
+
+/* Navigation Menu showing a list, without the bullets */
+
+#nav-menu{
+  list-style-type: none; /*This gets rid of the bullets.*/
+}
+#nav-menu li {
+  display: inline;
+}

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    width: 900px;
+    margin: 0 auto;
+}
+.top-options {
+    padding: 20px 0;
+    font-family: sans-serif;
+}
+.left-child {
+    margin-right: 10px;
+}
+.top-options p, 
+.top-options button,
+.top-options-left,
+.top-options-right,
+.small-ad,
+.main-header,
+.stuff p,
+.navigation p,
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+.top-options-left {
+    margin-right: 400px;
+}
+.top-options-right button,
+.top-options-right p {
+    margin-left: 10px;
+}
+button {
+    border: none;
+    font-size: 1em;
+    background-color: #577D9B;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+.header {
+    /* margin: 20px 0; */
+    border-bottom: 2px solid black;
+    border-top: 1px solid grey;
+    padding: 20px 0;
+}
+.small-ad {
+    width: 175px;
+    height: 150px;
+    background-color: cadetblue;
+}
+.main-header {
+    padding: 0 10px;
+    
+}
+.main-header, .small-ad {
+    vertical-align: middle;
+}
+.title {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.stuff p {
+    border-right: 1px solid gray;
+    padding: 0 5px;
+    font-family: sans-serif;
+}
+.stuff p:last-of-type {
+    border: none;
+}
+.navigation {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+}
+.navigation p {
+    font-size: 0.8em;
+    font-family: sans-serif;
+    padding-right: 5px; 
+}
+.ad {
+    height: 150px;
+    width: 100%;
+    background-color: cadetblue;
+    margin: 20px 0;
+}
+.main {
+    border-top: 1px solid gray;
+    padding: 20px 0;
+}
+.left {
+    width: 200px;
+}
+.center, .right {
+    width: 300px;
+}
+.left h2 {
+    font-style: italic;
+}
+.byline {
+    font-size: 0.8em;
+    color: dimgrey;
+    padding: 10px 0;
+}
+.timestamp {
+    color: firebrick;
+}
+.left ul {
+    margin: 20px;
+}
+.center .video {
+    height: 200px;
+    width: 100%;
+    background-color: lightseagreen;
+}
+.center {
+    margin: 0 20px;
+}
+.center p {
+    padding: 20px 0;
+}
+.right {
+    border-left: 1px solid dimgray;
+}
+.right h4 {
+    text-align: center;
+    padding: 10px;
+}
+.right .column {
+    width: 45%; 
+    padding: 5px;
+}
+.right .column:first-of-type {
+    border-right: 1px solid dimgray;
+}
