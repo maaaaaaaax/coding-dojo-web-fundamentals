@@ -1,0 +1,202 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#wrapper{
+    width: 970px;
+    /* height: 1029px; */
+    background-color: #705963;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+#header{
+    width: 970px;
+    height: 64px;
+    background-color: #F6F6F6;
+    display: block;
+}
+#main-content{
+    width: 970px;
+    height: 895px
+    display: block;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+#footer{
+    width: 970px;
+    height: 70px;
+    background-color: #F6F6F6;
+    display: block;
+    margin-top: 20px;
+}
+#profile-picture{
+    width: 400px;
+    height: 263px;
+    background-color: #b05351;
+    display: inline-block;
+    border: 10px solid grey;
+    vertical-align: top;
+    margin-bottom: 25px;
+}
+#about-me{
+    width: 470px;
+    height: 273px;
+    background-color: #b05351;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 24px;
+    background: linear-gradient(to right, #fefefe,#dbccd8);
+}
+.about-me-text{
+    padding: 10px;
+}
+#main-content-columns{
+    width: 918px;
+    height: 552px;
+    /* background-color: #b05351; */
+    display: block;
+}
+#column-1-la-mode{
+    width: 290px;
+    height: 552px;
+    background-color: #fefefe;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    background: linear-gradient(to right, #fefefe,#dbccd8);
+}
+#column-2-family-contacts{
+    width: 290px;
+    height: 552px;
+    background-color: #fefefe;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    background: linear-gradient(to right, #fefefe,#dbccd8);
+}
+#column-3-fiveEleven{
+    width: 290px;
+    background-color: #fefefe;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to right, #fefefe,#dbccd8);
+}
+.profile-headline{
+    font-size: 200%
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px;
+    vertical-align: top;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 160%;
+}
+.profile-second-headline{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    font-weight: bold;
+    margin-left: 400px;
+    font-size: 120%;
+}
+.software-icon{
+    height: 38px;
+    width: 38px;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.screenshot{
+    width: 290px;
+}
+.project-summary{
+    height: 155px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background: linear-gradient(to right, #fefefe,#dbccd8);
+}
+.column-headline {
+    color: #ffffff;
+    height: 30px;
+    font-size: 120%;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* display: block;
+    vertical-align: top; */
+    font-weight: bold;
+    background: linear-gradient(#b2b1b6, #878592, #b2b1b6);
+}
+.technologies-headline{
+    color: #ffffff;
+    height: 20px;
+    padding: 8px;
+    font-size: 110%;
+    display: block;
+    vertical-align: top;
+    background: linear-gradient(#b2b1b6, #878592, #b2b1b6);
+}
+.technologies-wrapper{
+    padding-top: 8px;
+    /* background-color: #ffffff; */
+    padding-left: 10px;
+    padding-bottom: 8px;
+    background: linear-gradient(to right, #fefefe,#dbccd8);
+}
+.social-media-icons{
+    height: 20px;
+    width: 20px;
+    margin: 1px;
+    display: inline-block;
+    vertical-align: top;
+}
+.social-media-profile-text{
+    font-style: italic;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: underline;
+}
+#footer-contact-info{
+    display: block;
+    vertical-align: top;
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#social-media-wrapper{
+    display: block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #f2f2f2;
+}
+button {
+    display: block;
+    vertical-align: top;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #387d63;
+    border: 1px solid #164232;
+    box-shadow: 3px 3px 3px #8b8b8b;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-wrapper{
+    background: linear-gradient(to right, #fefefe,#dbccd8);
+    height: 40px;
+}
+#pre-footer {
+    display: block;
+    height: 20px;
+    width: 970px;
+    background-color: #705963;
+}
