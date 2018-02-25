@@ -1,0 +1,242 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#wrapper{
+    width: 1920px;
+    height: 1596px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background: linear-gradient(to bottom, #265175, #3775aa)
+}
+#header{
+    width: 1920px;
+    height: 220px;
+    /* background-color is Google logo green */
+    /* background-color: #1ba85c; */
+    display: block;
+    vertical-align: top;
+}
+#header-logo{
+    height: 210px;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 50px;
+    padding-top: 30px;
+    /* background-color is Google Plus red */
+    /* background-color: #e54946; */
+}
+#header-right-elements{
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Google Play light blue */
+    /* background-color: #00d9fc; */
+    margin-left: 660px;
+}
+#header-links{
+    width: 400px;
+    height: 47px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Youtube logo red */
+    /* background-color: #ff0012; */
+    padding-left: 200px;
+    padding-top: 10px;
+    font-size: 165%;
+}
+#search-box-wrapper{
+    width: 550px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Google Drive light blue */
+    background-color: #444444;
+}
+#search-form{
+    height: 55px;
+    width: 204px;
+    display: inline-block;
+    /* vertical-align: top; */
+    background-color: #ffffff;
+    color: #c2c2c2;
+    margin-top: 30px;
+    margin-bottom: auto;
+    border: 1px solid #9a9a9a;
+    padding-left: 100px;
+    margin-left: 70px;
+}
+#navigation-bar-wrapper{
+    height: 90px;
+    width: 1684px;
+    display: block;
+    vertical-align: top;
+    background-color: #3981aa;
+    margin-left: 140px;
+    background: linear-gradient(#1c78aa,#3980aa,#1b77aa);
+    box-shadow: 3px 3px 3px #1e262b;
+    border-radius: 15px;
+}
+.navigation-bar-text{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: top;
+    font-size: 250%;
+    margin-left: 100px;
+    margin-top: 25px;
+    font-weight: 100;
+}
+#main-content-left-block{
+    width: 400px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Hulu logo dark green */
+    /* background-color: #61a944; */
+    margin-left: 160px;
+    padding-left: 50px;
+    text-align: center;
+    text-decoration: underline;
+    color: #ffffff;
+}
+#main-content-right-block{
+    height: 600px;
+    width: 1200px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Hulu logo dark green */
+    /* background-color: #0098dc; */
+}
+#footer{
+    height: 200px;
+    width: 1920px;
+    display: block;
+    /* background-color is Netflix logo dark green */
+    /* background-color: #ef001c; */
+    color: #6eadd5;
+    text-align: center;
+}
+#getting-started-applications-columns-wrapper{
+    height: 438px;
+    width: 1920px;
+    display: block;
+    /* background-color is Netflix logo dark green */
+    background-color: #ffffff;
+}
+#getting-started-column{
+    height: 438px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Hearthstone logo gold */
+    background-color: #ffffff;
+    text-align: center;
+}
+#applications-column{
+    height: 438px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Blizzard logo blue */
+    background-color: #ffffff;
+    text-align: center;
+    padding-left: 100px;
+}
+.gold-text{
+    color: #bfa324;
+}
+.white-text{
+    color: #ffffff;
+}
+button {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #145274;
+    border: 1px solid #bebebf;
+    box-shadow: 3px 3px 3px #1e262b;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 80%;
+    margin-bottom: auto;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+#docs-thru-FAQ-list{
+    padding-top: 50px;
+    list-style-image: url('./images/about-python-bullet.png');
+    list-style-position: inside;
+    line-height: 200%;
+    font-size: 200%;
+}
+#main-content-text{
+    color: #ffffff;
+    font-size: 180%;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 160px;
+    padding-left: 20px;
+}
+#zen-of-python-text{
+    color: #f7cc4e;
+    font-size: 250%;
+    text-align: center;
+    font-style: italic;
+    font-family: sans-serif;
+    padding-top: 25px;
+    line-height: 150%;
+}
+#zen-of-python-attribution{
+    color: #ffffff;
+    font-size: 200%;
+    text-align: center;
+    padding-top: 5px;
+}
+.column-headline{
+    font-size: 200%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+#getting-started-column-text{
+    font-size: 150%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 8px;
+}
+#applications-column-text{
+    font-size: 150%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 8px;
+}
+#getting-started-column-list{
+    font-size: 170%;
+    list-style: none;
+    color: #91c0de;
+    line-height: 130%;
+}
+#applications-column-list{
+    font-size: 170%;
+    list-style: none;
+    color: #91c0de;
+    line-height: 130%;
+}
+.footer-link{
+    display: inline-block;
+    font-size: 200%;
+    padding-left: 60px;
+    padding-top: 50px;
+}
+#copyright-info{
+    margin-top: 50px;
+}
