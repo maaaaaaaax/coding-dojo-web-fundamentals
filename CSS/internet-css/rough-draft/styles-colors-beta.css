@@ -1,0 +1,315 @@
+/* CSS styles for internet-css assignment by Max Wiederholt (max.wiederholt@gmail.com) */
+
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+#wrapper{
+    width: 1490px;
+    height: 1244px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    /* background-color is Reddit logo orange */
+    background-color: #ff3a19;
+    /* background: linear-gradient(to bottom, #265175, #3775aa) */
+}
+.child-of-wrapper{
+    display: block;
+    vertical-align: top;
+}
+#the-internet-header{
+    width: 1330px;
+    height: 87px;
+    color: #474747;
+    font-size: 400%;
+    /* background-color is Google logo green */
+    background-color: #1ba85c;
+    font-family: sans-serif;
+    padding-top: 30px;
+    padding-left: 160px;
+}
+#the-world-wide-web-header{
+    width: 1490px;
+    height: 95px;
+    background: linear-gradient(to bottom, #265175, #3775aa, #265175)
+}
+#main-content-wrapper{
+    width: 1490px;
+    height: 1032px;
+    display: block;
+    vertical-align: top;
+    margin: 0px;
+    /* background-color is Google Play light blue */
+    background-color: #00d9fc;
+}
+.child-of-main-content-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+}
+#sidebar-wrapper{
+    width: 318px;
+    height: 1032px;
+    display: inline-block;
+    /* background-color is Hulu logo dark green */
+    background-color: #61a944;
+    margin: 0px;
+}
+#dns-to-the-big-3-window{
+    /* width minus 10px due to rounding error? math says this should be 1172px */
+    width: 1167px;
+    height: 1032px;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color is Twitter logo light blue */
+    background-color: #00afe8;
+    margin: 0px;
+}
+#whats-an-internet-wrapper{
+    display: block;
+    height: 330px;
+    width: 318px;
+    /* background-color is Google Plus red */
+    background-color: #e54946;
+    border-bottom: 1px solid grey;
+}
+#coding-dojo-advertisement-wrapper{
+    display: block;
+    height: 500px;
+    width: 318px;
+    margin-top: 40px;
+    vertical-align: top;
+    /* background-color is Netflix logo dark red */
+    /* background-color: #ef001c; */
+    background-image: url("./images/ad_background.png")
+}
+.child-of-main-content-wrapper{
+    display: block;
+    vertical-align: top;
+}
+#DNS-wrapper{
+    display: block;
+    vertical-align: top;
+    height: 100px;
+    width: 1109px;
+    /* background-color is Bumble logo yellow-gold. */
+    background-color: #fec459;
+}
+#clients-and-servers-wrapper{
+    display: block;
+    height: 728px;
+    width: 1109px;
+    /* background-color is Evernote app icon green */
+    background-color: #00ad32;
+}
+#big-3-html-css-javascript-wrapper{
+    display: block;
+    /* drop 20 px from both and see if it shows up */
+    height: 196px;
+    width: 1059px;
+    border-top: 8px solid #00afe8;
+    border-left: 8px solid #00afe8;
+    border-right: 8px solid #00afe8;
+    /* background-color is Amazon logo gold */
+    background-color: #ff952e;
+}
+.child-of-whats-an-internet-wrapper{
+    display: block;
+    vertical-align: top;
+}
+#child-of-whats-an-internet-wrapper-01{
+    width: 310px;
+    height: 35px;
+    font-size: 150%;
+    font-weight: bold;
+}
+#child-of-whats-an-internet-wrapper-02{
+    width: 310px;
+    height: 70px;
+}
+#watch-a-video-png{
+    width: 302px;
+    height: 60px;
+    padding-top: 30px;
+    padding-left: 3px;
+}
+#more-resources-png{
+    width: 302px;
+    height: 60px;
+    padding-left: 3px;
+}
+/* #ad-background-png{
+    position: absolute;
+} */
+#ad-text{
+    display: block;
+    vertical-align: top;
+    width: 285px;
+    height: 140px;
+    color: #ffffff;
+    font-size: 230%;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+#coding-dojo-ninja-png{
+    display: block;
+    height: 170px;
+    padding-left: 90px;
+}
+#learn-more-png{
+    display: block;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+#home-icon-dns-text-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    height: 90px;
+    width: 180px;
+    /* background-color is Facebook logo blue */
+    background-color: #2e5c97;
+}
+#dns-wrapper-right-contact-info{
+    width: 350px;
+    height: 90px;
+    display: inline-block;
+    /* background-color is Facebook logo blue */
+    background-color: #2e5c97;
+    margin-left: 500px;
+}
+#phone-icon{
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    vertical-align: top;
+}
+#dns-contact-info-right-text{
+    display: inline-block;
+    /* background-color is Netflix logo dark red */
+    background-color: #c00011;
+    vertical-align: top;
+    height: 85px;
+    width: 245px;
+}
+#home-icon{
+    display: inline-block;
+    vertical-align: top;
+    height: 35px;
+}
+#dns-text{
+    display: inline-block;
+    vertical-align: top;
+    height: 35px;
+}
+#clients-servers-headline{
+    display: block;
+    height: 40px;
+    background-color: #ff3a19;
+}
+#clients-servers-about{
+    display: block;
+    height: 30px;
+    background-color: #c00011;
+}
+#clients-servers-list{
+    display: block;
+    height: 180px;
+    background-color: #fec459;
+    padding-left: 50px;
+    font-size: 140%;
+}
+#client-server-jpg{
+    display: block;
+    height: 155px;
+    padding-left: 340px;
+}
+#HTML-image{
+    display: inline-block;
+    height: 160px;
+    width: 180px;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#the-big-3-info-wrapper{
+    display: inline-block;
+    height: 160px;
+    width: 833px;
+    vertical-align: top;
+    background-color: #c00011;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#the-internet-header-blue-text{
+    color: #00679b;
+}
+#the-world-wide-web-header-text{
+    color: #ffffff;
+    font-size: 290%;
+    font-family: sans-serif;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+#child-of-whats-an-internet-wrapper-01-span{
+    color: #c00011;
+}
+#child-of-whats-an-internet-wrapper-02{
+    font-weight: bold;
+    font-size: 130%;
+}
+.child-of-whats-an-internet-wrapper-02-span
+{
+    color: #00679b;
+}
+.blue-body-healine{
+    font-size: 175%;
+    font-weight: bold;
+    color: #00679b;
+}
+#what-happens-list
+{
+    padding-left: 50px;
+    line-height: 150%;
+    font-size: 140%;
+}
+.big-3-body-text{
+    font-size: 140%;
+}
+#globe-png{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    height: 140px;
+}
+
+/* background-colors:
+
+Reddit logo orange: #ff3a19
+
+Facebook logo blue: #2e5c97
+
+Google logo green: #1ba85c
+
+Google Play logo light blue: #00d9fc
+
+Hulu logo dark green: #61a944
+
+Twitter logo light blue: #00afe8
+
+Google plus logo red: #e54946
+
+Netflix logo dark red: #c00011
+
+Bumble logo yellow-gold: #fec459
+
+Evernote app icon green: #00ad32
+
+Amazon logo gold: #ff952e
+
+Lyft logo pink-purple: #ff0083

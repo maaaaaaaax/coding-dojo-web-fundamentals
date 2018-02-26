@@ -1,0 +1,87 @@
+<!-- HTML code for internet-css assignment by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Internet | HTML & CSS by maaaaaaaax</title>
+    <meta name="description" content="About the Internet. Clients and Servers. So What Actually Happens? Overview page written by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <img id="globe-png" src="./images/globe.png" alt="Image of a globe">
+      <div id="the-internet-header" class="child-of-wrapper">
+        <p>The Inter<span id="the-internet-header-blue-text">net</span></p>
+      </div>
+      <div id="the-world-wide-web-header" class="child-of-wrapper">
+        <p id="the-world-wide-web-header-text">The World Wide Web</p>
+      </div>
+      <div id="main-content-wrapper" class="child-of-wrapper">
+        <div id="sidebar-wrapper" class="child-of-main-content-wrapper">
+          <div id="whats-an-internet-wrapper">
+            <div class="child-of-whats-an-internet-wrapper">
+              <p id="child-of-whats-an-internet-wrapper-01">So, what's an <span id="child-of-whats-an-internet-wrapper-01-span">Internet?</span></p>
+            </div>
+            <div class="child-of-whats-an-internet-wrapper">
+              <p id="child-of-whats-an-internet-wrapper-02">An <span class="child-of-whats-an-internet-wrapper-02-span">inter</span>connected <span class="child-of-whats-an-internet-wrapper-02-span">Net</span>work of computers all around the world!</p>
+            </div>
+            <div class="child-of-whats-an-internet-wrapper">
+              <img id="watch-a-video-png" src="./images/watch-a-video.png" alt="Watch a video button">
+            </div>
+            <div class="child-of-whats-an-internet-wrapper">
+              <img id="more-resources-png" src="./images/more-resources.png" alt="More Resources button">
+            </div>
+          </div>
+          <div id="coding-dojo-advertisement-wrapper">
+            <!-- using a CSS background-image selector instead of HTML <img id="ad-background-png" src="./images/ad_background.png" alt="Ad background png"> -->
+            <p id="ad-text">Reinvent your career in just 14 weeks</p>
+            <img id="coding-dojo-ninja-png" src="./images/ninja.png" alt="Coding Dojo Ninja icon">
+            <img id="learn-more-png" src="./images/learn-more.png" alt="Learn More button">
+          </div>
+        </div>
+        <div id="dns-to-the-big-3-window" class="child-of-main-content-wrapper">
+          <div id="DNS-wrapper" class="child-of-dns-to-the-big-3-window">
+            <div id="home-icon-dns-text-wrapper">
+              <img id="home-icon" src="./images/home.png" alt="Home icon">
+              <p id="dns-text">DNS</p>
+            </div>
+            <div id="dns-wrapper-right-contact-info">
+              <img id="phone-icon" src="./images/phone.png" alt="Phone icon">
+              <div id="dns-contact-info-right-text">
+                <p id="hours">Mon - Fri 9 a.m. - 5 p.m. (EST)</p>
+                <p id="phone number">855.967.3787</p>
+                <p id="intl-number">International +1.617.963.0555</p>
+              </div>
+            </div>
+          </div>
+          <div id="clients-and-servers-wrapper" class="child-of-dns-to-the-big-3-window">
+            <p id="clients-servers-headline" class="blue-body-healine">Clients and Servers</p>
+            <p id="clients-servers-about">Computers connected to the Web are called clients and servers.</p>
+            <ul id="clients-servers-list">
+              <li>Clients are the typical Web user's Internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and Web-accessing software available on those devices (usually a web browser like Firefox or Chrome).</li>
+              <li>Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.</li>
+            </ul>
+            <img id="client-server-jpg" src="./images/client_server.jpg" alt="Client Server relationship JPG">
+            <p class="blue-body-healine">So What Actually Happens?</p>
+            <ol id="what-happens-list">
+              <li>The browser goes to the DNS sever and finds the real address of the server that the website lives on.</li>
+              <li>The browser sends an HTTP request message to the server asking it to send a copy to the website to the client.</li>
+              <li>If the server approves the client's request, the server sends the client a "200 OK" message, which means "Permission granted! Here you go!", and then starts sending the website's files to the browser as a series of small chunks.</li>
+              <li>The broswer assembles the small chunks into a complete website and displays it to you!</li>
+            </ol>
+          </div>
+          <div id="big-3-html-css-javascript-wrapper" class="child-of-dns-to-the-big-3-window">
+            <img id="HTML-image" src="./images/html.png" alt="HTML's works with CSS and JavaScript to render webpages on a client machine.">
+            <div id="the-big-3-info-wrapper">
+              <p class="blue-body-healine">The Big 3 - HTML, CSS, JavaScript</p>
+              <p class="big-3-body-text">While the server can process information in many different languages, the files that they server to the client are always going to be some combination of HTML, CSS, and JavaScript!</p>
+              <p class="big-3-body-text">Learn more about the Big 3 here!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
