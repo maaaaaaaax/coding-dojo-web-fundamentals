@@ -1,0 +1,28 @@
+<!-- HTML code for Coding Dojo's For a Few Billion JavaScript web fundamentals exam by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>For a Few Billion</title>
+    <meta name="description" content="There is an old tale about a king who offered a servant $10,000 as a reward. The servant instead asked that for 30 days he be given an amount that would double, starting with a penny. (1 penny for the first day, 2 for the second, 4 for the third, then 8, 16, 32 pennies, and so on). | JavaScript Foundation Concepts | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <script>
+      var reward = 0.01;
+      var days = 1;
+      var wallet = 0;
+
+      function for_a_few_billion(days)
+      {
+        for (days; days >= 0; days--)
+        {
+          wallet = wallet + reward;
+          reward = reward * 2;
+        }
+        console.log(wallet);
+      }
+    </script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+  </body>
+</html>

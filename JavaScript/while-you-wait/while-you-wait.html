@@ -1,0 +1,39 @@
+<!-- HTML code for Coding Dojo's If You Don't Mind, Can I Have The Time? JavaScript web fundamentals exam by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>While You Wait</title>
+    <meta name="description" content="Create a birthday countdown. | JavaScript Foundation Concepts | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <script>
+      var daysUntilMyBirthday;
+
+      function daysUntilMyBirthday(daysUntilMyBirthday)
+      {
+        for (daysUntilMyBirthday; daysUntilMyBirthday >= 0; daysUntilMyBirthday--)
+        {
+          if (daysUntilMyBirthday == 0)
+          {
+            console.log("HAPPY BIRTHDAY!!!");
+          }
+          if (daysUntilMyBirthday > 0 && daysUntilMyBirthday < 5)
+          {
+            console.log("OHMIGOD GUYS ITS ONLY", daysUntilMyBirthday, "DAYS UNTIL MY BIRTHDAY!");
+          }
+          if (daysUntilMyBirthday >= 5 && daysUntilMyBirthday < 30)
+          {
+            console.log("Yay! Only", daysUntilMyBirthday, "days until my birthday!");
+          }
+          if (daysUntilMyBirthday >= 30)
+          {
+            console.log("Jeez, I have to wait", daysUntilMyBirthday, "days until my birthday.");
+          }
+        }
+      }
+    </script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+  </body>
+</html>

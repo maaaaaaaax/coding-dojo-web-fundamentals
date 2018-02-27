@@ -1,0 +1,193 @@
+JavaScript notes
+
+// Conditionals example
+
+if (myName == "Martin")
+{
+    console.log("Hey there Martin, how’s it going?");
+}
+else if (myName == "Beth")
+{
+    console.log("You look fabulous today!");
+}
+else
+{
+    console.log("Greetings Earthling. Have a great day!");
+}
+
+
+// Combining Conditionals
+In JavaScript, we can create compound conditionals such as “If it is Friday and I’m in a good mood, let’s go have fun!” Hence we would not go if either it is not Friday, or if I’m not in a good mood. AND operators combine two logical tests, requiring both true for the result to be true. Logical AND is double-&, located between two logical conditions. The above could represent in the source this way:
+
+if (today == "Friday" && moodLevel >= 100)
+{
+  goDancing();
+}
+
+OR operators combine two logical tests, returning true if either is true. An example might be “If it is raining or too far to walk, let’s call Uber!” The logical OR is double-|, located between logical conditions:
+
+if (raining == true || distanceMiles > 3)
+{
+  callUber();
+}
+
+We run callUber() unless both tests are not true (i.e. not raining and distance is three or less).  NOT operators invert a single boolean: true becomes false, and false becomes true. Logical NOT is the exclamation point !. “If it isn’t snowing, I’ll wear shorts” could become this source code:
+
+if (!snowing)
+{
+  bravelyDonSomeShorts();
+}
+
+
+
+// Loops
+
+FOR loops are good when you know exactly how many times those lines of code should be run. To create a FOR loop, in addition to the chunk of code to be looped, you need to specify three things, and these things go into the parentheses after the FOR: any initial setup, a test that needs to be true in order to continue looping, and any code that should be run at the end of each time through the loop. Here is an annotated example:
+
+//   A            B        D
+for (var num = 1; num < 6; num = num + 1)
+{
+  console.log("I'm counting! The number is ", num); // C
+}
+console.log("We are done. Goodbye world!");         // E
+
+The above will execute in this sequence: A - B-C-D - B-C-D - B-C-D - B-C-D - B-C-D - B - E.
+
+WHILE loops are great when you don’t know how many times (iterations) you will loop. Any FOR loop can be written as a WHILE loop. For example, the previous FOR loop could be written instead as this WHILE loop, which would execute identically:
+
+var num = 1;                                         // A
+while (num < 6)                                      // B
+{
+  console.log("I'm counting! The number is " + num); // C
+  num = num + 1;                                     // D
+}
+console.log("We are done. Goodbye world!");          // E
+
+Some developers like to increment a variable’s value by running num += 1; this is the same as typing num = num + 1. You may sometimes see num++ or even ++num; both are equivalent to +=.
+
+
+// BREAK and CONTINUE Loops
+
+The following code will print the first two lines, but then will immediately exit the while loop.
+
+var num = 1;
+while (num < 5)
+{
+  if (num == 3)
+  {
+    break;
+    // if you have additional code down here, it will never run!
+  }
+  console.log("I'm counting! The number is ", num);
+  num = num + 1;          // if we break, we leave the WHILE loop so these lines won’t run
+}
+
+
+The following code will count from 1 to 4, printing a statement about each number, but will completely forget to say anything about 3, because when num == 3, the continue forces it to skip the rest of that loop and continue from the top of the loop (after incrementing num).
+
+for (var num = 1; num < 5; num += 1)
+{
+  if (num == 3)
+  {
+    continue;
+    // if you have additional code down here, it will never run!
+  }
+  console.log("I'm counting! The number is ", num);
+}
+
+
+// FUNCTIONS
+
+Let’s say that you are writing a piece of code that has five different places where it needs to print your name. As mentioned above, for code that you expect to call often, separate this out into a different part of your file, so these lines of code don’t need to be duplicated each time you print your name. This is called a FUNCTION. Creating (or declaring) a function could look like this:
+
+function sayMyName( )
+{
+  console.log("My name is Martin");
+}
+
+
+‘Calling’ the function is also referred to as ‘running’ or ‘executing’ the function. If the above is how you declare a function, then the below is how you actually run that function:
+
+sayMyName();
+
+
+Parameters - you can pass values into functions, so that the functions can behave differently depending on those values. The caller simply inserts these values (called arguments) between the parentheses, when it executes the function. When the function is executed, those values are copied in and are available like any other variable. Specifically, inside the function, these copied-in values are referred to as parameters.
+
+function greetSomeone(person)
+{
+  if (person == "Martin") {
+    console.log("Yo dawg, howz it goin?");
+  }
+  else {
+    console.log("Greetings Earthling!");
+  }
+}
+
+
+// RETURN VALUES
+
+var joke = tellMeAGoodJoke();
+console.log(joke);
+
+
+// ARRAYS
+
+var arr = [2, 4, 6, 8]; // create array with four distinct values
+
+console.log(arr[1]); // "4" (Not 2 - this is at arr[0])
+
+arr.push(777); // arr was [2,4,6,8], is now [2,4,6,8,777]
+
+remove (and return) the value at the end of the array (and we shorten our array by one) by using the pop function:
+
+var last = arr.pop(); // arr was [2,4,6,8,777], is now [2,4,6,8]
+console.log(last); // "777" - this is what pop() returned
+
+console.log(arr); // "[2,4,6,8]"
+console.log(arr.length); // "4" - vals are stored at indices 0,1,2,3
+
+
+var arr = [2, 4, 6, 8]; // create array with four distinct values
+arr[1] = 10; // arr was [2, 4, 6, 8], is [2, 10, 6, 8]. //This statement sets arr[1] to be 10.
+
+to swap the values of two variables, use a temp variables
+
+var arr = [2, 10, 6, 8];
+temp = arr[1]; // arr == [2, 10,6, 8], temp == 10
+arr[1] = arr[3]; // arr == [2, 8, 6, 8], temp == 10
+arr[3] = temp; // arr == [2, 8, 6, 10], temp == 10
+console.log(arr); // displays [2,8,6,10]
+
+
+Comments in JavaScript:
+
+// This is a very friendly function, if I do say so myself.
+function greetSomeone(person) {
+  if (person == "Martin")        // Check whether it is Martin...
+  {
+    console.log("Yo dawg, howz it goin?");
+  }
+  else // if not, probably some normal human.
+  {
+    console.log("Greetings Earthling!");
+  }
+}
+
+/*
+   Simple function that responds directly if the person is Martin,
+   otherwise it provides a more generic salutation. No return value.
+*/
+function greetSomeone(person)
+{
+  if (person == "Martin") {
+    console.log("Yo dawg, howz it goin?");
+  } else {
+    console.log("Greetings Earthling!");      /* no clue who it is... */
+  }
+}
+
+Modulo operator
+
+34 % 6 ... reads like ... 34 divided by 6 leaves a remainder of ____
+
+A library is a related set of functions and values that have been grouped together under a common name.

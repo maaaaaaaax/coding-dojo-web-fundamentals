@@ -1,0 +1,37 @@
+<!-- HTML code for Coding Dojo's Range Print JavaScript web fundamentals exam by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Range Print</title>
+    <meta name="description" content="Create a function that can take a start point, end point, and skip amount, to print all numbers in the range. | JavaScript Foundation Concepts | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <!-- for example, printRange(2, 10, 2); would print
+    2
+    4
+    6
+    8
+    -->
+    <script>
+      var start;
+      var end;
+      var skip;
+      var current;
+
+      function printRange(start, end, skip)
+      {
+        console.log(start);
+        current = start + skip;
+        while (current < end)
+        {
+          console.log(current);
+          current = current + skip;
+        }
+        return 0;
+      }
+    </script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+  </body>
+</html>

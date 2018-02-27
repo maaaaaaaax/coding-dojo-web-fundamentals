@@ -1,0 +1,52 @@
+<!-- HTML code for Coding Dojo's If You Don't Mind, Can I Have The Time? JavaScript web fundamentals exam by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>If You Don't Mind, Can I Have The Time?</title>
+    <meta name="description" content="JavaScript Foundation Concepts | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <script>
+      var HOUR;
+      var MINUTE;
+      var PERIOD;
+
+      function can_i_have_the_time(HOUR,MINUTE,PERIOD)
+      {
+        if (PERIOD == "AM")
+        {
+          if (MINUTE < 30)
+          {
+            console.log("It's just after ", HOUR, "in the morning.");
+          }
+          else if (MINUTE > 30)
+          {
+            console.log("It's almost", HOUR + 1, "in the morning.");
+          }
+          else
+          {
+            console.log("It's", HOUR, ":", MINUTE, "in the morning.");
+          }
+        }
+        if (PERIOD == "PM")
+        {
+          if (MINUTE < 30)
+          {
+            console.log("It's just after ", HOUR, "in the evening.");
+          }
+          else if (MINUTE > 30)
+          {
+            console.log("It's almost", HOUR + 1, "in the evening.");
+          }
+          else
+          {
+            console.log("It's", HOUR, ":", MINUTE, "in the evening.");
+          }
+        }
+      }
+    </script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+  </body>
+</html>

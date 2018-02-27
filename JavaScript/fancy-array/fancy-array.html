@@ -1,0 +1,44 @@
+<!-- HTML code for Coding Dojo's Fancy Array JavaScript web fundamentals exam by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fancy Array</title>
+    <meta name="description" content="Fancy Array | JavaScript Foundation Concepts | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <!--
+
+    Normally, if you print an array such as ["James", "Jill", "Jane", "Jack"], you will see the following:
+
+    [ "James", "Jill", "Jane", "Jack" ]
+    Let's make it look fancy! Write a function that will make it print like:
+
+    0 -> James
+    1 -> Jill
+    2 -> Jane
+    3 -> Jack
+
+    note: to run this successfully, include the brackets when calling the function from the console, like so:
+
+    printNames(["Max", "Ben", "Spencer", "Natalie"]);
+
+    -->
+    <script>
+      var names = [];
+      var i = 0;
+
+      function printNames(names)
+      {
+        while (i < names.length)
+        {
+          console.log(i, " -> ", names[i]);
+          i++;
+        }
+        return 0;
+      }
+    </script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+  </body>
+</html>
