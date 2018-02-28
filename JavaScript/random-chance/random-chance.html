@@ -1,0 +1,77 @@
+<!-- HTML code for Coding Dojo's Random Chance JavaScript web fundamentals exercise by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Chance</title>
+    <meta name="description" content="Random Chance | JavaScript Foundation Concepts | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <!--
+
+    Let's play the slots!
+
+    Make a function that takes a number of quarters (1 quarter = 1 game).
+
+    There is a 1 in 100 chance to win the slot machine (which will give you between 50 - 100 quarters ... use Math.random and Math.floor to pick a random number of coins).
+
+    While the user still has quarters, use Math.random to determine if they won.
+
+    If they ever win, return the number of quarters (ex: they had 50 remaining quarters and won 90, so it should return 140).
+
+    Return 0 if all the quarters were wasted.
+
+    -->
+    <script>
+      "use strict";
+      var quarters = 0;
+      var a = 0;
+      var b = 1;
+      var reward = 0;
+      var wallet = 0;
+
+      // a = (Math.trunc(Math.random() * 100)) + 1;
+      //
+      // b = (Math.trunc(Math.random() * 100)) + 1;
+
+      console.log("Welcome to Random Chance! Call function randomChance(x); by inputting a number between 50 and 100 to test your luck!");
+
+      function randomChance(quarters)
+      {
+        while (quarters > 0)
+        {
+          // decrement quarters by one to start the game
+
+          quarters = quarters - 1;
+
+          console.log("Credits left: ", quarters);
+
+          console.log("Spinning the slots...");
+
+          // generate two random numbers between 1 and 10
+
+            a = (Math.trunc(Math.random() * 100)) + 1;
+
+            b = (Math.trunc(Math.random() * 100)) + 1;
+
+            // check for equality - if true, return a random number of quarters from 50 - 100
+
+            if (a == b)
+            {
+              reward = (Math.trunc(Math.random() * 50)) + 50;
+
+              console.log("Congrats! You won ", reward, "quarters!");
+
+              wallet = quarters + reward;
+
+              return wallet;
+            }
+        }
+        console.log("Tough luck! Call randomChance(x); to play again.");
+        return 0;
+      }
+    </script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+  </body>
+</html>

@@ -191,3 +191,113 @@ Modulo operator
 34 % 6 ... reads like ... 34 divided by 6 leaves a remainder of ____
 
 A library is a related set of functions and values that have been grouped together under a common name.
+
+Math. library:
+Math.random(), returns a randomly generated decimal number between 0 and 1. It can theoretically return zero, but it cannot return one: for this reason, you can think of it as returning some number between zero and 'almost-one'. The other three functions are related: they accept a decimal number and return an integer. Given an integer, all three leave it unchanged. Otherwise, floor is a pessimist, ceil is an optimist, and trunc is a simplifier. Math.floor() makes negative numbers more negative and positive less positive. Conversely, Math.ceil() makes positives more positive and negatives less negative. Math.trunc() drops any fraction, moving the number towards zero.
+
+Math.floor(2.718) and Math.trunc(2.718) both return 2, but Math.ceil(2.718) returns 3.
+
+Math.floor(-3.1416) is -4; both Math.trunc(-3.1416) and Math.ceil(-3.1416) are -3.
+
+Naturally, Math.ceil(42) == Math.trunc(42) == Math.floor(42) == 42
+
+RANDOM INTEGERS
+Math.random() is "from 0 to almost-one". Math.random() * 50, then, is "from 0 to almost 50". Let's turn those decimal ranges into integers:
+Math.trunc(Math.random() * 50) is "50 possible integers from 0 to 49". Let's add an offset, so we start at 51: Math.trunc(Math.random() * 50)+51 is perfect.
+
+
+
+Using Modulo to Extract a Digit
+
+327 % 10 becomes the 7 we want. Putting it all together, we print the ‘hundreds’ digit like this:
+Putting it all together, we print the ‘hundreds’ digit like this:
+
+console.log(Math.floor(myBigNum / 100) % 10);
+
+console.log(Math.floor(327.68) % 10);
+
+console.log(327 % 10);
+
+console.log(7);
+
+
+Arrays have a property .length which is defined as ‘one greater than the largest populated index’:
+
+myArr[myArr.length + 1] = 2;  // myArr == [42,"hi",true,undefined,2]
+console.log(myArr.length);    // "5", even though we set only 4 values
+myArr.pop();                  // myArr == [42,"hi",true,undefined]
+console.log(myArr.length);    // "4", even though we never set myArr[3]
+
+Arrays are passed by reference. This means that a pointer is sent when an array is sent as an argument.
+
+Objects are a way to store information where a Key accesses a set Value.
+
+console.log(Dany.last_name); // Targaryen
+
+var Dany = {
+  first_name: 'Daenerys',
+  last_name: 'Targaryen',
+  age: 22,
+  allegiance: 'House Targaryen',
+  ancestry: 'Valyrian',
+  titles: ['Queen of the Andals, the Rhoynar and the First Men', 'Lady Regent of the Seven Kingdoms', 'Protector of the Realm', 'Khaleesi of the Great Grass Sea', 'Breaker of Chains', 'Mother of Dragons', 'Queen of Meereen']
+}
+
+
+var dojo = {};                                 // creates an empty object
+dojo = {
+  name: 'Coding Dojo',                         // property can store a string
+  number_of_students: 25,                      // property can store a number
+  instructors: ['Andrew', 'Michael', 'Jay'],   // property can store arrays
+  location: {                                  // property can even store another object!
+    city: 'San Jose',
+    state: 'CA',
+    zipcode: 95112
+  }
+}                                              // access object properties with dot (.) notation
+console.log(dojo.name, dojo.number_of_students, dojo.instructors, dojo.location);
+console.log(dojo["name"]);                     // or bracket [] notation (note: specify key in quotes)
+
+Let's add a new key to our Dojo Object called snacks where we have an Array of snacks we have at our Dojo.
+
+dojo.snacks = ['Fig Bars', 'Bagels', 'Popcorn', 'Apples'];
+
+
+Arrays of Objects
+It is very common to see arrays filled with objects, where the objects all have the keys but with different values. Let's look at Mike's favorite collection of donuts.
+
+var glazedDonuts = [
+  {
+    frosting: 'glazed',
+    style: 'cake',
+    type: 'old fashioned',
+    age: '45',
+    time: 'minutes'
+  },
+  {
+    frosting: 'glazed',
+    style: 'yeast raised',
+    type: 'regular',
+    age: '5',
+    time: 'minutes'
+  },
+  {
+    frosting: 'glazed',
+    style: 'yeast raised',
+    type: 'jelly filled',
+    age: '1',
+    time: 'seconds'
+  }
+];
+
+You could then go to the donut owner and ask something like: Can I buy the 1st donut on the rack if it has been out of the oven for fewer than 25 minutes? The code conversation for that would be:
+
+var purchase;
+//You
+if((glazedDonuts[0].age < 25 && glazedDonuts[0].time == 'minutes') || glazedDonuts[0].time == 'seconds'){
+  //shop owner
+  purchase = glazedDonuts[0];
+}
+else {
+  console.log('sorry it has been out a bit longer');
+}
