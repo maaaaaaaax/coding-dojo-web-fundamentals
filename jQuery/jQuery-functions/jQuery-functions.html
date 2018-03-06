@@ -1,0 +1,161 @@
+<!-- HTML & JavaScript code by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="description" content="Hi, Google! | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <!--
+
+    Basic function demonstrations for jQuery. See also: .is , .attr , .val , .change , .prop
+
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-functions.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Row 1: on click, create an alert to the user saying Hello, world! -->
+      <div id="row1">
+        <p id="row1-headline" class="row-headline">.click</p>
+        <div id="row1-content" class="row-content">
+          <input id="row1-button" class="row-button" type="submit" value=".click">
+          <p id="row1-summary" class="row-summary">Click the button to greet the user.</p>
+        </div>
+      </div>
+      <!-- Row 2: on click, hide this row.
+      Documentation for .hide: Hide the matched elements. -->
+      <div id="row2">
+        <p id="row2-headline" class="row-headline">.hide</p>
+        <div id="row2-content" class="row-content">
+          <input id="row2-button" class="row-button" type="submit" value="hide">
+          <p id="row2-summary" class="row-summary">Click the button at left to hide all elements in this division.</p>
+        </div>
+      </div>
+      <div id="row3">
+        <p id="row3-headline" class="row-headline">.show</p>
+        <div id="row3-content" class="row-content">
+          <input id="row3-button" class="row-button" type="submit" value="show">
+          <p id="row3-summary" class="row-summary">Click the button at left to show all elements in the previous division.</p>
+        </div>
+      </div>
+      <div id="row4">
+        <p id="row4-headline" class="row-headline">.toggle</p>
+        <div id="row4-content" class="row-content">
+          <input id="row4-button" class="row-button" type="submit" value="toggle">
+          <p id="row4-summary" class="row-summary">Click the button at left to toggle visiblity on all elements in the previous division.</p>
+        </div>
+      </div>
+      <div id="row5">
+        <p id="row5-headline" class="row-headline">.slideDown</p>
+        <div id="row5-content" class="row-content">
+          <input id="row5-button" class="row-button" type="submit" value="slide down">
+          <p id="row5-summary" class="row-summary">Click the button at left to reveal this row's headline!</p>
+        </div>
+      </div>
+      <div id="row6">
+        <p id="row6-headline" class="row-headline">.slideUp</p>
+        <div id="row6-content" class="row-content">
+          <input id="row6-button" class="row-button" type="submit" value="slide up">
+          <p id="row6-summary" class="row-summary">Click the button at left to hide this row's headline!</p>
+        </div>
+      </div>
+      <div id="row7">
+        <p id="row7-headline" class="row-headline">.slideToggle</p>
+        <div id="row7-content" class="row-content">
+          <input id="row7-button" class="row-button" type="submit" value="slide toggle">
+          <p id="row7-summary" class="row-summary">Click the button at left to toggle visiblity of this row's headline!</p>
+        </div>
+      </div>
+      <div id="row8">
+        <p id="row8-headline" class="row-headline">.fadeIn</p>
+        <div id="row8-content" class="row-content">
+          <input id="row8-button" class="row-button" type="submit" value="fade in">
+          <p id="row8-summary" class="row-summary">Click the button at left to fade in visiblity of this row's paragraph!</p>
+        </div>
+      </div>
+      <div id="row9">
+        <p id="row9-headline" class="row-headline">.fadeOut</p>
+        <div id="row9-content" class="row-content">
+          <input id="row9-button" class="row-button" type="submit" value="fade toggle">
+          <p id="row9-summary" class="row-summary">Click the button at left to fade toggle visiblity of this row's headline!</p>
+        </div>
+      </div>
+      <div id="row10">
+        <p id="row10-headline" class="row-headline">.addClass</p>
+        <div id="row10-content" class="row-content">
+          <input id="row10-button-1" class="row-button" type="submit" value="blue text">
+          <input id="row10-button-2" class="row-button" type="submit" value="red background">
+          <input id="row10-button-3" class="row-button" type="submit" value="both">
+          <input id="row10-button-4" class="row-button" type="submit" value="reset">
+          <p id="row10-summary" class="row-summary">Click the button to add color!</p>
+        </div>
+      </div>
+      <div id="row11">
+        <p id="row11-headline" class="row-headline">.before</p>
+        <div id="row11-content" class="row-content">
+          <input id="row11-button" class="row-button" type="submit" value="insert">
+          <p id="row11-summary" class="row-summary">is your email.</p>
+        </div>
+      </div>
+      <div id="row12">
+        <p id="row12-headline" class="row-headline">.after</p>
+        <div id="row12-content" class="row-content">
+          <input id="row12-button" class="row-button" type="submit" value="after">
+          <p id="row12-summary" class="row-summary">Your email is&nbsp;</p>
+        </div>
+      </div>
+      <div id="row13">
+        <p id="row13-headline" class="row-headline">.append</p>
+        <div id="row13-content" class="row-content">
+          <input id="row13-button" class="row-button" type="submit" value="count">
+          <p id="row13-summary" class="row-summary">Counter is at </p>
+        </div>
+      </div>
+      <div id="row14">
+        <p id="row14-headline" class="row-headline">.html</p>
+        <div id="row14-content" class="row-content">
+          <input id="row14-button" class="row-button" type="submit" value="show">
+          <p id="row14-summary" class="row-summary">Click the button at left to alert the user of all HTML code in the row14-content ID.</p>
+        </div>
+      </div>
+      <!-- <div id="row15">
+        <p id="row15-headline" class="row-headline">.attr</p>
+        <div id="row15-content" class="row-content">
+          <input id="row15-button" class="row-button" type="submit" value="Append">
+          <input id="row15-checkbox" type="checkbox" checked="checked">
+          <label for="check1">Check me</label>
+          <p id="row15-summary" class="row-summary">Click the button to append a new paragraph!</p>
+        </div>
+      </div> -->
+      <!-- .val - Get the current value of the first element in the set of matched elements or set the value of every matched element. -->
+      <div id="row16">
+        <p id="row16-headline" class="row-headline">.val</p>
+        <div id="row16-content" class="row-content">
+          <input id="row16-button-count" class="row-button" type="submit" value="count">
+          <input id="row16-button-alert" class="row-button" type="submit" value="alert">
+          <p id="row16-summary" class="row-summary">Counter is at </p>
+        </div>
+      </div>
+      <!-- .text - Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements. -->
+      <div id="row17">
+        <p id="row17-headline" class="row-headline">.text</p>
+        <div id="row17-content" class="row-content">
+          <input id="row17-button" class="row-button" type="submit" value="hello">
+          <input id="row17-button-alert" class="row-button" type="submit" value="alert">
+          <p id="row17-summary" class="row-summary">Click the button to add to this paragraph:&nbsp;</p>
+        </div>
+      </div>
+      <div id="row18">
+        <p id="row18-headline" class="row-headline">.data</p>
+        <div id="row18-content" class="row-content">
+          <input id="row18-button" class="row-button" type="submit" value="fill">
+          <p id="row18-summary" class="row-summary">My first name is <span id="first-name">blank</span> and my last name is <span id="last-name">blank</span>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

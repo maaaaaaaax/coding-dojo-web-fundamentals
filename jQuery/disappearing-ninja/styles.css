@@ -1,0 +1,94 @@
+/* CSS styles for internet-css assignment by Max Wiederholt (max.wiederholt@gmail.com) */
+
+* {
+    /* outline: 0;
+    padding: 0;
+    margin: 0; */
+    /* border: 0; */
+    font-family: 'Ubuntu', sans-serif;
+}
+#wrapper{
+    width: 1600px;
+    height: 1600px;
+    display: block;
+    vertical-align: top;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #2e5c97;
+}
+.wrapper-child{
+    display: block;
+    vertical-align: top;
+    background-color: #1ba85c;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header{
+    height: 200px;
+    background-color: #c00011;
+}
+#main-content-window{
+    height: 1000px;
+    background-color: #00afe8;
+}
+#footer{
+    height: 150px;
+    background-color: #c00011;
+    padding-top: 50px;
+}
+.reset-button{
+    display: block;
+    vertical-align: top;
+    border-radius: 25px;
+    font-size: 300%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    height: 350px;
+    width: 350px;
+    background-color: #fec459;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.obama-logo-png{
+    display: block;
+    vertical-align: top;
+    height: 300px;
+    width: 300px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+
+
+
+/* background-colors:
+
+Reddit logo orange: #ff3a19
+
+Facebook logo blue: #2e5c97
+
+Google logo green: #1ba85c
+
+Google Play logo light blue: #00d9fc
+
+Hulu logo dark green: #61a944
+
+Twitter logo light blue: #00afe8
+
+Google plus logo red: #e54946
+
+Netflix logo dark red: #c00011
+
+Bumble logo yellow-gold: #fec459
+
+Evernote app icon green: #00ad32
+
+Amazon logo gold: #ff952e
+
+Lyft logo pink-purple: #ff0083

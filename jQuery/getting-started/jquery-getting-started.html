@@ -1,0 +1,58 @@
+<!-- HTML & JavaScript code for Coding Dojo's Getting Started jQuery web fundamentals exercise by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Students and Instructors</title>
+    <meta name="description" content="Students and Instructors | JavaScript Foundation Concepts | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <!--
+
+    Given the following array of objects:
+
+    var students = [
+         {first_name:  'Michael', last_name : 'Jordan'},
+         {first_name : 'John', last_name : 'Rosales'},
+         {first_name : 'Mark', last_name : 'Guillen'},
+         {first_name : 'KB', last_name : 'Tonel'}
+    ]
+    Create a program that outputs:
+
+    Michael Jordan
+    John Rosales
+    Mark Guillen
+    KB Tonel
+
+    note: type studentsAndInstructors(students) into Chrome JS console to execute.
+
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-getting-started.js"></script>
+    <script>
+      "use strict";
+
+      var students = [
+           {first_name:'Michael',last_name:'Jordan'},
+           {first_name:'John',last_name:'Rosales'},
+           {first_name:'Mark',last_name:'Guillen'},
+           {first_name:'KB',last_name:'Tonel'}
+      ]
+
+      var i = 0;
+
+      function studentsAndInstructors()
+      {
+        while (i < students.length)
+        {
+          console.log(students[i].first_name + " " + students[i].last_name);
+          i++;
+        }
+      }
+    </script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+    <p id='myParagraph'>This is my paragraph! </p>
+    <button> Click me to change the paragraph! </button>
+  </body>
+</html>

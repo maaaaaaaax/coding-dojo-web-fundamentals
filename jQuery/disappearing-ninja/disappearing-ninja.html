@@ -1,0 +1,57 @@
+<!-- HTML & JavaScript code by Max Wiederholt (max.wiederholt@gmail.com) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Logos</title>
+    <meta name="description" content="Hi, Google! | HTML & JavaScript by Max Wiederholt (max.wiederholt@gmail.com) for Coding Dojo.">
+    <!--
+
+    Create a simple HTML page with 8 images of equal width and height (you can use any image you like). When a particular image is clicked, have that image disappear. Also, include a button on the bottom of the page called 'Restore'. When the button is clicked, all images will appear.
+
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="disappearing-ninja.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header" class="wrapper-child"></div>
+      <div id="main-content-window" class="wrapper-child">
+        <div id="main-content-row-1" class="main-content-row">
+          <div id="image-wrapper-1" class="image-wrapper">
+            <img id="obama-logo-1" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+          <div id="image-wrapper-2" class="image-wrapper">
+            <img id="obama-logo-2" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+          <div id="image-wrapper-3" class="image-wrapper">
+            <img id="obama-logo-3" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+          <div id="image-wrapper-4" class="image-wrapper">
+            <img id="obama-logo-4" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+        </div>
+        <div id="main-content-row-2" class="main-content-row">
+          <div id="image-wrapper-5" class="image-wrapper">
+            <img id="obama-logo-5" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+          <div id="image-wrapper-6" class="image-wrapper">
+            <img id="obama-logo-6" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+          <div id="image-wrapper-7" class="image-wrapper">
+            <img id="obama-logo-7" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+          <div id="image-wrapper-8" class="image-wrapper">
+            <img id="obama-logo-8" class="obama-logo-png" src="obama-logo.png" alt="President Barack Obama's 'Hope' campaign logo">
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="wrapper-child">
+        <input id="reset-button-1" class="reset-button" type="submit" value=" restore ">
+      </div>
+    </div>
+  </body>
+</html>
